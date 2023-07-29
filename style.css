@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces&family=Inter:wght@100;400&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@100;900&family=Playfair+Display&family=Public+Sans:wght@300&family=Roboto:wght@300&family=Rubik:wght@300&display=swap");
+*, ::after, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(235, 18%, 26%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.newsletter-wrappper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2em;
+  border-radius: 0.5em;
+}
+.newsletter-wrappper .details {
+  align-self: self-start;
+  width: 45%;
+  padding: 2em 0 0 2em;
+}
+.newsletter-wrappper .details h1 {
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 2em;
+}
+.newsletter-wrappper .details ul {
+  line-height: 2em;
+  margin: 1.5em 0;
+}
+.newsletter-wrappper .details ul li {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+.newsletter-wrappper .details ul li img {
+  max-width: 5%;
+}
+.newsletter-wrappper .details label {
+  display: block;
+  font-weight: 900;
+  line-height: 1.5em;
+}
+.newsletter-wrappper .details input[type=email] {
+  width: 100%;
+  padding: 1em;
+  border-radius: 0.5em;
+  margin: 0.5em 0;
+  outline: unset;
+  border: 0.1em solid hsl(235, 18%, 26%);
+}
+.newsletter-wrappper .details input[type=email]:hover {
+  outline-color: hsl(4, 100%, 67%);
+  border-color: hsl(4, 100%, 67%);
+}
+.newsletter-wrappper .details .subscribe_btn {
+  background-color: hsl(234, 29%, 20%);
+  font-weight: bolder;
+  width: 100%;
+  border-radius: 0.5em;
+  padding: 1em;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  outline: none;
+}
+.newsletter-wrappper .details .subscribe_btn:hover {
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+}
+.newsletter-wrappper .image-container img {
+  max-width: 100%;
+}
+
+.success-modal {
+  display: none;
+  width: 35%;
+  padding: 2em;
+  border-radius: 0.5em;
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+  display: none;
+}
+.success-modal_dismiss_btn {
+  background-color: hsl(234, 29%, 20%);
+  font-weight: bolder;
+  width: 100%;
+  border-radius: 0.5em;
+  padding: 1em;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  outline: none;
+}
+.success-modal_dismiss_btn:hover {
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+}
+.success-modal .success-modal .block {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

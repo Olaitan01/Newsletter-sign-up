@@ -1,0 +1,32 @@
+//Layout
+$Mobile:375px;
+$Desktop:1440px;
+
+//Colors
+$hover_btn-color:hsl(4, 100%, 67%);
+$btn_color: hsl(234, 29%, 20%);
+$text_color:hsl(235, 18%, 26%);
+$body_color:hsl(0, 0%, 100%);
+
+$paragraph_font:1rem;
+$font_family:Robot;
+$paragraph_weigth:400;
+$header_weight:700;
+
+@mixin Btn{
+    background-color: $btn_color;
+    font-weight: bolder;
+    width: 100%;
+    border-radius: .5em;
+    padding: 1em;
+    color: $body_color;
+    border: none;
+    outline: none;
+  
+    
+
+    &:hover{
+        background-color: $hover_btn-color;           
+        cursor: pointer;
+    }
+}
