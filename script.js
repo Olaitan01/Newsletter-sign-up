@@ -5,7 +5,7 @@ const submit =document.getElementById("submit")
 const successModal=document.getElementById("success-modal")
 const dismissBtn=document.getElementById("dismiss-btn")
 const errorMessage=document.getElementById("error-message")
-
+const userEmail=document.getElementById("user-email")
 // const error =[]
 
 form.addEventListener("submit",(e)=>{
@@ -15,6 +15,7 @@ form.addEventListener("submit",(e)=>{
        
         errorMessage.innerText= err
     }else{
+        userEmail.innerText=email.value
         document.querySelector(".modal-container").style.display="block"
         email.value=""
     }

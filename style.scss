@@ -133,6 +133,7 @@ background-color: $text_color;
         
         &_dismiss_btn{
             @include Btn;
+            
         }
         .success-modal .block{
             display: block;
