@@ -19,17 +19,19 @@ body{
 }
 
 .newsletter-wrappper{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: $body_color;
+    margin: auto;
     padding: 2em;
-    border-radius: .5em;
+    border-radius: 1em;
+  
     
     .details{
         align-self: self-start;
-        width: 45%;
+        width: 50%;
         padding: 2em 0 0 2em;
         
         h1{
@@ -37,6 +39,7 @@ body{
             font-size: 3.5rem;
             line-height: 2em;
         }
+        
 
         ul{
             line-height: 2em;
