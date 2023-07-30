@@ -76,6 +76,9 @@ body{
             
            
         }
+        #form{
+            padding: 1em 0;
+        }
         label{
             display: block;
             font-weight: 900;
@@ -95,6 +98,7 @@ body{
         }
         .subscribe_btn{
           @include Btn;
+          margin: 2em 0;
         }
         
     }

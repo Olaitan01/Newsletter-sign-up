@@ -48,6 +48,9 @@ body {
 .newsletter-wrappper .details ul li img {
   max-width: 5%;
 }
+.newsletter-wrappper .details #form {
+  padding: 1em 0;
+}
 .newsletter-wrappper .details label {
   display: block;
   font-weight: 900;
@@ -74,6 +77,7 @@ body {
   color: hsl(0, 0%, 100%);
   border: none;
   outline: none;
+  margin: 2em 0;
 }
 .newsletter-wrappper .details .subscribe_btn:hover {
   background-color: hsl(4, 100%, 67%);
