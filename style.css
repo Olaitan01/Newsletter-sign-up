@@ -95,7 +95,6 @@ body {
   justify-content: space-between;
   align-items: center;
   top: 0;
-  margin: auto;
   background-color: hsl(235, 18%, 26%);
 }
 .modal .success-modal {
