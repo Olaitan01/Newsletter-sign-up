@@ -139,6 +139,7 @@ body {
   .newsletter-wrappper {
     flex-direction: column-reverse;
     padding: 0em;
+    width: 100%;
   }
   .newsletter-wrappper .details {
     width: 100%;
