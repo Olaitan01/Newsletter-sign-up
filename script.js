@@ -14,11 +14,14 @@ form.addEventListener("submit",(e)=>{
       let err= "valid email required" 
        
         errorMessage.innerText= err
-    }else{
+    }
+   
+    else{
         userEmail.innerText=email.value
         document.querySelector(".modal-container").style.display="block"
         email.value=""
     }
+   
     
 })
 

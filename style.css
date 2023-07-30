@@ -89,23 +89,28 @@ body {
 }
 
 .modal {
-  width: 70%;
+  width: 100%;
   position: absolute;
   height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transform: translateX(-12.25%);
+  position: fixed;
   top: 0;
   background-color: hsl(235, 18%, 26%);
 }
 .modal .success-modal {
   display: block;
-  width: 35%;
+  width: 25%;
   padding: 2em;
   border-radius: 0.5em;
   margin: auto;
   background-color: hsl(0, 0%, 100%);
   z-index: 1;
+}
+.modal .success-modal p {
+  padding: 1em 0;
 }
 .modal .success-modal_dismiss_btn {
   background-color: hsl(234, 29%, 20%);

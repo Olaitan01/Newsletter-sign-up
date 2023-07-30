@@ -113,27 +113,32 @@ body{
 .modal-container{
     display: none;
     overflow: hidden;
+    
 }
 .modal{
-width: 70%;
+width: 100%;
 position: absolute;
 height: 100vh;
 display: flex;
 justify-content: space-between;
 align-items: center;
+transform: translateX(-12.25%);
+
+position: fixed;
 top: 0;
-
-
 background-color: $text_color;
     .success-modal{
         display: block;
-        width: 35%;
+        width: 25%;
         padding: 2em;
         border-radius: .5em;
         margin: auto;
         background-color: $body_color;
         z-index: 1;
         
+        p{
+            padding: 1em 0
+        }
     
         
         &_dismiss_btn{
