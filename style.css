@@ -13,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 .newsletter-wrappper {
@@ -82,16 +83,31 @@ body {
   max-width: 100%;
 }
 
-.success-modal {
+.modal-container {
   display: none;
+}
+
+.modal {
+  width: 70%;
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  margin: auto;
+  background-color: hsl(235, 18%, 26%);
+}
+.modal .success-modal {
+  display: block;
   width: 35%;
   padding: 2em;
   border-radius: 0.5em;
   margin: auto;
   background-color: hsl(0, 0%, 100%);
-  display: none;
+  z-index: 1;
 }
-.success-modal_dismiss_btn {
+.modal .success-modal_dismiss_btn {
   background-color: hsl(234, 29%, 20%);
   font-weight: bolder;
   width: 100%;
@@ -101,10 +117,10 @@ body {
   border: none;
   outline: none;
 }
-.success-modal_dismiss_btn:hover {
+.modal .success-modal_dismiss_btn:hover {
   background-color: hsl(4, 100%, 67%);
   cursor: pointer;
 }
-.success-modal .success-modal .block {
+.modal .success-modal .success-modal .block {
   display: block;
 }/*# sourceMappingURL=style.css.map */

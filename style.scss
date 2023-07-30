@@ -15,8 +15,9 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    
+    position: relative;
 }
+
 .newsletter-wrappper{
     width: 100%;
     display: flex;
@@ -103,18 +104,38 @@ body{
         }
     }
 }
-.success-modal{
+
+//MODAL STYLE
+.modal-container{
     display: none;
-    width: 35%;
-    padding: 2em;
-    border-radius: .5em;
-    margin: auto;
-    background-color: $body_color;
-    display: none;
-    &_dismiss_btn{
-        @include Btn;
-    }
-    .success-modal .block{
+}
+.modal{
+width: 70%;
+position: absolute;
+height: 100vh;
+display: flex;
+justify-content: space-between;
+align-items: center;
+top: 0;
+margin: auto;
+
+background-color: $text_color;
+    .success-modal{
         display: block;
+        width: 35%;
+        padding: 2em;
+        border-radius: .5em;
+        margin: auto;
+        background-color: $body_color;
+        z-index: 1;
+        
+    
+        
+        &_dismiss_btn{
+            @include Btn;
+        }
+        .success-modal .block{
+            display: block;
+        }
     }
 }

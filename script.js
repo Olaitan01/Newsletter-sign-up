@@ -1,16 +1,28 @@
-const subscribeBtn= document.querySelector(".subscribe_btn")
-const dismissBtb=document.querySelector(".dismiss_btn")
-const modal=document.querySelector(".sucess-modal")
-const newletterWrapper=document.querySelector(".newsletter-wrapper")
 
-subscribeBtn.addEventListener("click",()=>{
-    if(modal.style.display=="block"){
-        modal.style.display="none";
-        newletterWrapper.style.display="block"
-        console.log("hi")
+const form = document.getElementById("form")
+const email=document.getElementById("email")
+const submit =document.getElementById("submit")
+const successModal=document.getElementById("success-modal")
+const dismissBtn=document.getElementById("dismiss-btn")
+const errorMessage=document.getElementById("error-message")
+
+// const error =[]
+
+form.addEventListener("submit",(e)=>{
+    e.preventDefault()
+    if(email.value=="" || email.value==null){
+      let err= "valid email required" 
+       
+        errorMessage.innerText= err
     }else{
-        modal.style.display="block"
-        newletterWrapper.style.display="none"
-console.log("no")
+        document.querySelector(".modal-container").style.display="block"
+        email.value=""
     }
+    
+})
+
+
+dismissBtn.addEventListener("click",()=>{
+    document.querySelector(".modal-container").style.display="none"
+
 })
