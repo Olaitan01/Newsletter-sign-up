@@ -12,14 +12,18 @@ form.addEventListener("submit",(e)=>{
     e.preventDefault()
     if(email.value=="" || email.value==null){
       let err= "valid email required" 
-       
+        errorMessage.innerText= err
+        
+    }
+    else if(!email.value.includes("@")){
+        let err= "valid email required" 
         errorMessage.innerText= err
     }
-   
-    else{
+   else {
         userEmail.innerText=email.value
         document.querySelector(".modal-container").style.display="block"
         email.value=""
+        
     }
    
     
