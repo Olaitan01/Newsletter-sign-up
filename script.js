@@ -15,7 +15,7 @@ form.addEventListener("submit",(e)=>{
         errorMessage.innerText= err
         
     }
-    else if(!email.value.includes("@")){
+    else if(!email.value.includes("@") || !email.value.includes(".")){
         let err= "valid email required" 
         errorMessage.innerText= err
     }
